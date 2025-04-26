@@ -13,7 +13,7 @@ void bubbleSort(int arr[], int n){
             }
         }
         if(swapornot == 0){
-            break; //if no swap is done, the array is already sorted
+            break; //if no swap is done, the array is already sorted. This is for improving the time complexity
         }
     }
 }
