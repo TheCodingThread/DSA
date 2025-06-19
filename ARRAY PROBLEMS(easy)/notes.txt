@@ -1,0 +1,7 @@
+a. If we define an array outside the main function, then it will be known as global array in which '0' is assigned to every position of the array.
+
+b. If we define an array inside the main function, then a garbage value will be assigned at every position of the array.
+
+c. Inside the main, the maximum length of the array that we can define is 10^6 while outside the main, the maximum length is 10^7.
+
+d. All the codes provided are the optimal methods
