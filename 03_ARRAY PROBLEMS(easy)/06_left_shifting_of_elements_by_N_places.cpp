@@ -38,3 +38,8 @@ int main(){
 
     return 0;
 }
+
+// optimal solution
+// reverse(a, a+d)
+// reverse(a+d, a+n)
+// reverse(a, a+n)
