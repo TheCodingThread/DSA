@@ -1,22 +1,39 @@
-//brute force
-
 #include <bits/stdc++.h>
 using namespace std;
 
+//brute force
+// void moveZeroes(int arr[], int n){
+//     vector<int> temp;
+//     for(int i = 0; i<n; i++){
+//         if(arr[i] != 0){
+//             temp.push_back(arr[i]);
+//         }
+//     }
+//     for(int i=0; i<temp.size(); i++){
+//         arr[i] = temp[i];
+//     }
+//     for(int i=temp.size(); i<n; i++){
+//         arr[i] = 0;
+//     }
+// }
+//time complexity: O(2n)
+//space complexity: O(x) where x is the number of non-zero elements in the array
+
+//optimal
 void moveZeroes(int arr[], int n){
-    vector<int> temp;
-    for(int i = 0; i<n; i++){
-        if(arr[i] != 0){
-            temp.push_back(arr[i]);
+    for(int i=0; i<n; i++){
+        if(arr[i] == 0){
+            for(int j=i+1; j<n; j++){
+                if(arr[j] != 0){
+                    swap(arr[i], arr[j]);
+                    break; // break after the first non-zero swap
+                }
+            }
         }
     }
-    for(int i=0; i<temp.size(); i++){
-        arr[i] = temp[i];
-    }
-    for(int i=temp.size(); i<n; i++){
-        arr[i] = 0;
-    }
 }
+//time complexity O(N)
+//space complexity O(1)
 
 int main(){
     int n;
