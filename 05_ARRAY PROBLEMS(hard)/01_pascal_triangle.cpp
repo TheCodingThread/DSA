@@ -30,7 +30,7 @@ long long findEle(int row){
 
 
 //2
-void printCol(){
+void printRow(){
     int cl;
     cout << "Enter the column: ";
     cin >> cl;
@@ -46,11 +46,6 @@ void printCol(){
     }
 }
 
-//3
-void pTriangle(int row){
-    
-}
-
 int main(){
     cout << "Enter number of rows: ";
     int row;
@@ -58,7 +53,7 @@ int main(){
 
     cout << endl;
 
-    cout << "Enter the number for problem execution" << endl << "1. Find the element using row and column" << endl << "2. Print the respective column." << endl << "3. Print the Pascal Triangle" << endl;
+    cout << "Enter the number for problem execution" << endl << "1. Find the element using row and column" << endl << "2. Print the respective row." << endl;
     cout << endl;
 
     int opt;
@@ -68,8 +63,8 @@ int main(){
         long long result = findEle(row);
         cout << "The element is: " << result;
     }
-    else if(opt == 2) printCol();
-    else if(opt == 3) pTriangle(row);
+    else if(opt == 2) printRow();
+    else cout << "Invalid Input";
 
     return 0;
 }
