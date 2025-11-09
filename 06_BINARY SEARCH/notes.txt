@@ -7,3 +7,7 @@
                v. if target > mid, then low = mid+1 else high = mid-1
               vi. Recursively call the function to continue the same process, till mid = target
              vii. if high becomes < low, then it implies that the target doesn't exist in the array
+
+3. time complexity: log2(n)
+
+4. for overflow cases, where you take the low and high as INT_MAX, then mid = low + (high-low)/2
