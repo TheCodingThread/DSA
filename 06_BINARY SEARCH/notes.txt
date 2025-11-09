@@ -1,0 +1,9 @@
+1. Binary search is only applicable in sorted space.
+
+2. Algorithm - i. low = 0 and high = n-1
+              ii. mid = (low+high)/2
+             iii. if mid == target return mid
+              iv. else check if target is > or < than mid
+               v. if target > mid, then low = mid+1 else high = mid-1
+              vi. Recursively call the function to continue the same process, till mid = target
+             vii. if high becomes < low, then it implies that the target doesn't exist in the array
