@@ -2,6 +2,7 @@
 using namespace std;
 
 int binarySearch(int arr[], int target, int low, int mid, int high){
+    if(low>high) return -1;
     mid = (low+high)/2;
     if(arr[mid] == target) return mid;
     else if(target < arr[mid]){
