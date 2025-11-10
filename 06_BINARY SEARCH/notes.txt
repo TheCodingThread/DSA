@@ -11,3 +11,5 @@
 3. time complexity: log2(n)
 
 4. for overflow cases, where you take the low and high as INT_MAX, then mid = low + (high-low)/2
+
+5. Lower bound :- Smallest index in the array whose element is greater than or equal to the target element
