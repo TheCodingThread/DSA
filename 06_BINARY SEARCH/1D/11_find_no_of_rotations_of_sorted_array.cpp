@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//find the sorted half, find the minimum element in that half and then eliminate that half
+//similar as finding the minimum but have to track the index of the minimum element and then finally return it
 int findRot(int arr[], int n){
     int ans = INT_MAX, loc = -1;
     int low = 0, high = n-1;
