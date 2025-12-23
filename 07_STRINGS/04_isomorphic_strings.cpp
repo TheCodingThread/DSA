@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//eg. egg and add are isomorphic to each other
+
 bool isoStr(string s, string t){
     char ms[128] = {0};
     char mt[128] = {0};
