@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//anagrams are those words which have same characters with same frequency
+
 bool valAna(string s, string t){
     unordered_map<char, int> ums;
     unordered_map<char, int> umt;
