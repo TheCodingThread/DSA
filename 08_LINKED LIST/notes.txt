@@ -1,0 +1,8 @@
+I. 1D
+    1. The elements of a linked list are not stored in contiguous memory locations
+    2. We can change the size of a linked list
+    3. The starting point is known as the head
+    4. With every element, we also store a 'next' that points to the next elemnent's memory location
+    5. As the last element or 'tail' will not point to anything, 'next' will be defined as 'nullptr'
+    6. For a 32-bit system, a node takes 8 bytes(1 data and ptr)
+       For a 64-bit system, a node takes 12 bytes
