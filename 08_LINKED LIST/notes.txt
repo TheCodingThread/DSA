@@ -6,3 +6,4 @@ I. 1D
     5. As the last element or 'tail' will not point to anything, 'next' will be defined as 'nullptr'
     6. For a 32-bit system, a node takes 8 bytes(1 data and ptr)
        For a 64-bit system, a node takes 12 bytes
+    7. Whenever it is said that a linked list is given it means the head of the ll is given
