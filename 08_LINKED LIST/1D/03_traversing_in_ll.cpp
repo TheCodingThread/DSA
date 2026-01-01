@@ -23,6 +23,7 @@ Node* arrToLL(vector<int> &arr){
     }
     return head;
 }
+//time complexity: O(n)
 
 int main(){
     vector<int> ll = {2, 4, 6, 8};

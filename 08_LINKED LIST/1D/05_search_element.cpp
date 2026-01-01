@@ -31,6 +31,7 @@ int searchEle(Node* head, int ele){
         temp = temp->next;
     }
 }
+//time complexity: O(n)
 
 int main(){
     vector<int> ll = {2, 4, 6, 8};

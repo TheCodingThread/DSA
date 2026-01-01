@@ -33,6 +33,7 @@ int lenOfLL(Node* head){
     }
     return cnt;
 }
+//time complexity: O(n)
 
 int main(){
     vector<int> ll = {2, 4, 6, 8};
