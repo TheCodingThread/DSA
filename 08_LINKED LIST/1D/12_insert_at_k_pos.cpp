@@ -34,7 +34,10 @@ void print(Node* head){
 }
 
 Node* insertk(Node* head, int pos, int val){
-    if(head == NULL) return new Node(val, nullptr);
+    if(head == NULL) {
+        if(pos == 1) return new Node(val, nullptr);
+        else return nullptr;
+    }
     if(pos == 1) return new Node(val, head);
     Node* temp = head;
     int cnt = 0;
