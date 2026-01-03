@@ -45,7 +45,7 @@ Node* insertTail(Node* head, int el){
         temp = temp->next;
     }
 }
-//time complexity: O(1)
+//time complexity: O(N)
 
 int main(){
     vector<int> ll = {2, 4, 6, 8};
