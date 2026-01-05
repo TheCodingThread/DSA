@@ -7,3 +7,6 @@ I. 1D
     6. For a 32-bit system, a node takes 8 bytes(1 data and ptr)
        For a 64-bit system, a node takes 12 bytes
     7. Whenever it is said that a linked list is given it means the head of the ll is given
+
+II. Doubly ll
+   1. It is a linked list in which a node points to both the directions, that is, the next and the previous node
