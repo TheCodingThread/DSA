@@ -37,9 +37,17 @@ void print(Node* head){
 }
 
 Node* insertTail(Node* head, int newNodeVal){
-    if(head == nullptr) head = new Node(newNodeVal, nullptr, nullptr);
+    if(head == nullptr){
+        head = new Node(newNodeVal, nullptr, nullptr);
+        return head;
+    }
     Node* temp = head;
-    
+    while(temp->next != nullptr){
+        temp = temp->next;
+    }
+    Node* newNode = new Node(newNodeVal, nullptr, temp);
+    temp->next = newNode;
+    return head;
 }
 
 int main(){
@@ -48,7 +56,7 @@ int main(){
     int newNodeVal;
     cout << "Enter the node value: ";
     cin >> newNodeVal;
-    head = insertHead(head, newNodeVal);
+    head = insertTail(head, newNodeVal);
     print(head);
     return 0;
 }
