@@ -36,14 +36,10 @@ void print(Node* head){
     cout << endl;
 }
 
-Node* insertHead(Node* head, int newNodeVal){
-    if(head == nullptr){
-        head = new Node(newNodeVal, nullptr, nullptr);
-        return head;
-    }
-    Node* temp = new Node(newNodeVal, head, nullptr);
-    head->prev = temp;
-    return temp;
+Node* insertTail(Node* head, int newNodeVal){
+    if(head == nullptr) head = new Node(newNodeVal, nullptr, nullptr);
+    Node* temp = head;
+    
 }
 
 int main(){
