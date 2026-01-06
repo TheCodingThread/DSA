@@ -37,10 +37,7 @@ void print(Node* head){
 }
 
 Node* insertAtk(Node* head, int newNodeVal, int k){
-    if(head == nullptr){
-        head = new Node(newNodeVal, nullptr, nullptr);
-        return head;
-    }
+    if(head == nullptr) return head;
     int cnt = 0;
     Node* temp = head;
     if(k == 1){
