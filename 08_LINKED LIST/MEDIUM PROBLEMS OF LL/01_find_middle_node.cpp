@@ -24,15 +24,6 @@ Node* arrToLL(vector<int> &arr){
     return head;
 }
 
-void print(Node* head){
-    Node* temp = head;
-    while(temp != nullptr){
-        cout << temp->data << " ";
-        temp = temp->next;
-    }
-    cout << endl;
-}
-
 Node* midNode(Node* head){
     if(head == nullptr || head->next == nullptr) return head;
 
@@ -66,7 +57,7 @@ int main(){
         cin >> a;
         ll.push_back(a);
     }
-    
+
     Node* head = arrToLL(ll);
 
     head = midNode(head);
