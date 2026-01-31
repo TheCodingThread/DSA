@@ -9,6 +9,7 @@ int countEle(vector<int> v){
         int maxCount = count(v.begin(), v.end(), maxNum);
         return v.size() - minCount - maxCount;
 }
+//time complexity: O(n)
 
 int main(){
     int n;
