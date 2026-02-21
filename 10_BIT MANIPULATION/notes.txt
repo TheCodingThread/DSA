@@ -1,0 +1,5 @@
+1. x >> k means the binary bits of x has to be moved to right by k bits
+2. x >> k = x/(2^k)
+3. Integer stores in 32 bits. Out of it, 31st bit is reserved for sign. 0 for +ve and 1 for -ve.
+4. To store the negative values, the computer stores by taking the 2s complement of the number
+5. x << k = x * 2^k
