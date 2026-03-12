@@ -2,30 +2,49 @@
 using namespace std;
 
 class Stack{
-    int top = -1;
+    int topIndex = -1;
     int st[10];
 
+public:
+
     void push(int x){
-        if(top >= 10) cout << "Stack overflow!";
-        st[++top] = x;
+        if(topIndex == 9){
+            cout << "Stack overflow!\n";
+            return;
+        }
+        st[++topIndex] = x;
     }
 
     void pop(){
-        if(top == -1) cout << "Stack underflow!";
-        top--;
+        if(topIndex == -1){
+            cout << "Stack underflow!\n";
+            return;
+        }
+        topIndex--;
     }
 
     int top(){
-        if(top == -1) cout << "No elements in the stack";
-        return st[top];
+        if(topIndex == -1){
+            cout << "No elements in the stack\n";
+            return -1;
+        }
+        return st[topIndex];
     }
 
     int size(){
-        return top+1;
+        return topIndex + 1;
     }
 };
-//space complexity: O(10)
 
 int main(){
+    Stack st1;
+    st1.push(10);
+    st1.push(20);
+    st1.push(30);
+
+    cout << st1.top() << endl;
+    st1.pop();
+    cout << st1.top() << endl;
+    cout << st1.size() << endl;
     return 0;
 }
