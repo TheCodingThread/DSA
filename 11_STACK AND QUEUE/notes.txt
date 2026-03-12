@@ -1,0 +1,5 @@
+1. Stack operations - push(x), pop(), top(), size()
+
+2. Queue operations - push(x), pop(), top(), size()
+
+3. top() in queue returns the first entered element of queue
