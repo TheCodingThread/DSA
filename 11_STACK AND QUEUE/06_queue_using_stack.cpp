@@ -40,6 +40,11 @@ class Queue{
     }
 };
 
+//if the push() operation is costly then we can do the following:
+//push: put x in s1
+//pop: if s2 is empty then move all the elements from s1 to s2 and pop the top of s2 else if s2 is not empty then pop the top of s2
+//top: if s2 is empty then move all the elements from s1 to s2 and return the top of s2 else if s2 is not empty then return the top of s2
+
 int main(){
     Queue q1;
     q1.push(10);
