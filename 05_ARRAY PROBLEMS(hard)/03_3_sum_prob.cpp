@@ -62,7 +62,7 @@ vector<vector<int>> threeSum(int arr[], int n){
             else{
                 vector<int> temp = {arr[i], arr[j], arr[k]};
                 ans.push_back(temp);
-                j++, k++;
+                j++, k--;
                 while(j<k && arr[j] == arr[j-1]) j++;
                 while(j<k && arr[k] == arr[k+1]) k--;
             }
