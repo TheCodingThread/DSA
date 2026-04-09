@@ -56,7 +56,7 @@ using namespace std;
 //optimal - optimize the space; instead of taking row and column array we perform this step within the matrix itself
 void zeroConvert(int arr[][100], int n, int m){
     int col0 = 1;
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n; i++){ //this loop is for marking the first row and column to 0 if any element in that row or column is 0
         for(int j=0; j<m; j++){
             if(arr[i][j] == 0){
                 arr[i][0] = 0;
@@ -65,14 +65,12 @@ void zeroConvert(int arr[][100], int n, int m){
             }
         }
     }
-    for(int i=1; i<n; i++){
+    for(int i=1; i<n; i++){ //this loop is for converting the elements to 0 based on the first row and column
         for(int j=1; j<m; j++){
-            if(arr[i][j] != 0){
-                if(arr[0][j] == 0 || arr[i][0] == 0) arr[i][j] = 0;
-            }
+            if(arr[i][j] != 0 && (arr[0][j] == 0 || arr[i][0] == 0)) arr[i][j] = 0;
         }
     }
-    if(arr[0][0] == 0){
+    if(arr[0][0] == 0){ //it is for converting the first row and column to 0 if the first element is 0
         for(int j=0; j<m; j++) arr[0][j] = 0;
     }
     if(col0 == 0){
