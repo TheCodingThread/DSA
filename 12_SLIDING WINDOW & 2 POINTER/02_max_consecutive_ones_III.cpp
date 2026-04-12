@@ -1,3 +1,5 @@
+//in this problem we are given a binary array and an integer k. We have to find the maximum number of consecutive 1's in the array if we can flip at most k 0's.
+
 #include<bits/stdc++.h>
 using namespace std;
 
