@@ -1,0 +1,23 @@
+INTRO TO HEAP
+
+    1. To implement a Priority Queue efficiently, we use a Binary Heap.
+
+    2. Min-Heap: The value of every node is smaller than or equal to its children. The smallest element is always at the root.
+    Max-Heap: The value of every node is greater than or equal to its children. The largest element is always at the root.
+
+    3. While we visualize a heap as a tree, we actually store it in a simple Array. If a node is at index i:
+    Left Child: 2i+1
+    Right Child: 2i+2
+    Parent: (i - 1)/2 (floor value)
+
+    4. Operations-
+        i. Insertion (O(log N)): When you insert a new value, we compare it with its parent. If it's smaller, swap them. Repeat until it finds its rightful place. This is called "Bubble Up" (or Up-Heapify).
+        ii. Extract Min (O(log N)): As the minimum elment is at the root, we remove it by-
+            a. Replace the root with the last element in the array.
+            b. Decrease the size.
+            c. The new root is likely too large. Compare it with its smallest child and swap. Repeat until the heap property is restored. This is called "Heapify Down" (or Down-Heapify).
+        iii. Decrease Key (O(log N)): If you want to make a specific element "more important", you update its value. Since it's now smaller, it might need to move up. You perform the "Bubble Up" logic.
+        iv. Delete (O(log N)): To delete element at index i-
+            a. Call DecreaseKey(i, -infinity)- This forces the element to the root.
+            b. Call ExtractMin()- The element is gone.
+
