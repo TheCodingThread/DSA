@@ -1,3 +1,6 @@
+//Problem: We are given a string s, we need to find the longest palindromic substring in s.
+//Solution: We can use the expand around center approach to find the longest palindromic substring.
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -23,6 +26,7 @@ string lonPalSubStr(string s){
 
     return s.substr(start, maxLen);
 }
+//time complexity: O(n^2)
 
 int main(){
     string s;
