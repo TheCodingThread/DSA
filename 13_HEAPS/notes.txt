@@ -21,3 +21,8 @@ INTRO TO HEAP
             a. Call DecreaseKey(i, -infinity)- This forces the element to the root.
             b. Call ExtractMin()- The element is gone.
 
+QUESTION SOLVING TIPS
+
+    1. To find-
+        i. kth largest element, use min-heap
+        ii. kth smallest element, use max-heap
