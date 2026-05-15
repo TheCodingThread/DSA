@@ -1,3 +1,6 @@
+//Problem: In this, we are given an array of integers representing the stock prices on different days. We need to find the maximum profit that can be achieved by buying and selling the stock on different days.
+//Solution: We can keep track of the minimum price seen so far and calculate the profit for each price by subtracting the minimum price from the current price. We can update the maximum profit accordingly.
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -10,6 +13,7 @@ int stockProfit(vector<int>& prices){
     }
     return maxProfit;
 }
+//time complexity: O(N); space complexity: O(1)
 
 int main(){
     int n;
