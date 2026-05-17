@@ -1,3 +1,5 @@
+//In this, the range is from 0 to n
+
 #include<bits/stdc++.h>
 using namespace std;
 
