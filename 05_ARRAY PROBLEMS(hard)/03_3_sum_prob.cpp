@@ -51,14 +51,14 @@ vector<vector<int>> threeSum(int arr[], int n){
     cin >> sum;
     sort(arr, arr+n);
     vector<vector<int>> ans;
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n-2; i++){
         if(i>0 && arr[i] == arr[i-1]) continue;
         int j = i+1;
         int k = n-1;
         while(j<k){
             int checkSum = arr[i]+arr[j]+arr[k];
-            if(checkSum < 0) j++;
-            else if(checkSum > 0) k--;
+            if(checkSum < sum) j++;
+            else if(checkSum > sum) k--;
             else{
                 vector<int> temp = {arr[i], arr[j], arr[k]};
                 ans.push_back(temp);
