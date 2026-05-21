@@ -13,6 +13,16 @@ void lNShift(int *arr1, int *arr2, int n, int d){
         }
     }
 }
+//time complexity: O(n); space complexity: O(n);
+
+// optimal solution
+void lNShiftOptimal(int *arr, int n, int d) {
+    d = d % n; // Handle cases where d >= n
+    reverse(arr, arr + d);
+    reverse(arr + d, arr + n);
+    reverse(arr, arr + n);
+}
+//time complexity: O(n)
 
 int main(){
     int n;

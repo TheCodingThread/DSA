@@ -1,17 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void lShift(int *arr, int n){
-    int num = arr[0]; // Store the first element
-    for(int i=0; i<n; i++){
-        if(i==n-1){
-            arr[i] = num; // Last element becomes the first element
-        }
-        else{
-            arr[i] = arr[i+1]; // Shift each element to the left
-        }
-    }
+void lShift(int *arr, int n) {
+    int first = arr[0]; // Store the first element
+    for (int i = 0; i < n - 1; i++) arr[i] = arr[i+1];
+    arr[n-1] = first;
 }
+//time complexity: O(n)
 
 int main(){
     int n;
