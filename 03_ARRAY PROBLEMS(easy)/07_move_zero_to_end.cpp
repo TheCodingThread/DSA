@@ -19,7 +19,7 @@ using namespace std;
 //time complexity: O(2n)
 //space complexity: O(x) where x is the number of non-zero elements in the array
 
-//optimal
+//optimal - In this, we will iterate through the array and whenever we encounter a zero, we will look for the next non-zero element and swap it with the zero. This way, all the zeroes will be moved to the end of the array while maintaining the order of non-zero elements.
 void moveZeroes(int arr[], int n){
     for(int i=0; i<n; i++){
         if(arr[i] == 0){

@@ -1,3 +1,5 @@
+//Solution - We can use a set to store the unique elements of both arrays. We will first insert all the elements of the first array into the set, and then insert all the elements of the second array into the set. Finally, we will convert the set back to an array and return its size as the size of the union of the two arrays.
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -27,6 +29,7 @@ int arrUnion(int arr[], int arr2[], int n1, int n2){
     cout << endl;
     return st.size();
 }
+//time complexity: O(n1 + n2); space complexity: O(n1 + n2)
 
 int main(){
     int n1;
