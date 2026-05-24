@@ -31,9 +31,10 @@ int lenSubArray(int arr[], int n, int s){
         if(sum == s){
             len = max(len, j-i+1);
         }
-        else if(sum > s){
+        while(sum > s){
             sum -= arr[i];
             i++;
+            if(sum == s) len = max(len, j-i+1);
         }
     }
     return len;
